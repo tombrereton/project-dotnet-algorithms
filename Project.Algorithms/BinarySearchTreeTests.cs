@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using NUnit.Framework;
+using Project.Algorithms.Models;
 
 namespace Project.Algorithms
 {
@@ -71,55 +72,5 @@ namespace Project.Algorithms
             return null;
         }
 
-        private void FindNodeInTree()
-        {
-            Node root = null;
-            Tree bst = new Tree();
-            int SIZE = 1;
-            int[] a = new int[SIZE];
-
-            Console.WriteLine("Generating random array with {0} values...", SIZE);
-
-            Random random = new Random();
-
-            Stopwatch watch = Stopwatch.StartNew();
-
-            for (int i = 0; i < SIZE; i++)
-            {
-                a[i] = random.Next(10000);
-            }
-
-            watch.Stop();
-
-            Console.WriteLine("Done. Took {0} seconds", (double)watch.ElapsedMilliseconds / 1000.0);
-            Console.WriteLine();
-            Console.WriteLine("Filling the tree with {0} nodes...", SIZE);
-
-            watch = Stopwatch.StartNew();
-
-            for (int i = 0; i < SIZE; i++)
-            {
-                root = bst.insert(root, a[i]);
-            }
-
-            watch.Stop();
-
-            Console.WriteLine("Done. Took {0} seconds", (double)watch.ElapsedMilliseconds / 1000.0);
-            Console.WriteLine();
-            Console.WriteLine("Traversing all {0} nodes in tree...", SIZE);
-
-            watch = Stopwatch.StartNew();
-
-            bst.traverse(root);
-
-            watch.Stop();
-
-            Console.WriteLine("Done. Took {0} seconds", (double)watch.ElapsedMilliseconds / 1000.0);
-            Console.WriteLine();
-
-            Console.ReadKey();
-
-
-        }
     }
 }

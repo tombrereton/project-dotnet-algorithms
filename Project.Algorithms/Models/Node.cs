@@ -1,4 +1,4 @@
-﻿namespace Project.Algorithms
+﻿namespace Project.Algorithms.Models
 {
     internal class Node
     {
