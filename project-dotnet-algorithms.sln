@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-algorithms", "project-algorithms\project-algorithms.csproj", "{2600AFAB-3977-4A1F-9E17-BDF1C78FEA3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "project-algorithms", "project-algorithms\project-algorithms.csproj", "{2600AFAB-3977-4A1F-9E17-BDF1C78FEA3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dijkstras", "dijkstras\dijkstras.csproj", "{1795672B-605B-4EC9-933D-E8DF3A4BA6EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Algorithms", "Project.Algorithms\Project.Algorithms.csproj", "{A9FF9C02-5374-4892-8F4F-CDD118A83AB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{2600AFAB-3977-4A1F-9E17-BDF1C78FEA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2600AFAB-3977-4A1F-9E17-BDF1C78FEA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2600AFAB-3977-4A1F-9E17-BDF1C78FEA3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1795672B-605B-4EC9-933D-E8DF3A4BA6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1795672B-605B-4EC9-933D-E8DF3A4BA6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1795672B-605B-4EC9-933D-E8DF3A4BA6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1795672B-605B-4EC9-933D-E8DF3A4BA6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9FF9C02-5374-4892-8F4F-CDD118A83AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FF9C02-5374-4892-8F4F-CDD118A83AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FF9C02-5374-4892-8F4F-CDD118A83AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FF9C02-5374-4892-8F4F-CDD118A83AB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,8 @@
 using System;
 
-namespace Tests
+namespace Project.Algorithms
 {
-    internal class MinSpanningTree
+    public class MinSpanningTree
     {
         public MinSpanningTree(int[] distance, int[] predecessor)
         {
