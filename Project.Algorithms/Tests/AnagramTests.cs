@@ -25,20 +25,22 @@ namespace Project.Algorithms
         [TestCase("abcd", 0)]
         [TestCase("ifailuhkqq", 3)]
         [TestCase("cdcd", 5)]
+        [TestCase("bbcaadacaacbdddcdbddaddabcccdaaadcadcbddadababdaaabcccdcdaacadcababbabbdbacabbdcbbbbbddacdbbcdddbaaa", 4832)]
+        [TestCase("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 166650)]
         public void ShouldAnagramCounterShouldReturn10(string word, int expectedCount)
         {
             var count = CountAnagrams(word);
             Assert.That(count, Is.EqualTo(expectedCount));
         }
 
-        private int CountAnagrams(string word)
+        private long CountAnagrams(string word)
         {
             // for char i loop
             // for char j loop
             // get substring(i,j) and sort alphabetically
             // insert in hashmap
             // if exists remove from hashmap and increase count
-            var map = new Dictionary<string, int>();
+            var map = new Dictionary<string, long>();
             var len = word.Length;
             for (int i = 0; i < len; i++)
             {
@@ -59,8 +61,8 @@ namespace Project.Algorithms
                 }
             }
 
-            var matches = 0;
-            foreach (var ssCount in map.Values)
+            long matches = 0;
+            foreach (long ssCount in map.Values)
             {
                 matches += NChooseTwo(ssCount);
             }
@@ -68,7 +70,7 @@ namespace Project.Algorithms
             return matches;
         }
 
-        private int Factorial(int i)
+        private long Factorial(long i)
         {
             if (i <= 1)
             {
@@ -77,7 +79,7 @@ namespace Project.Algorithms
 
             return i * Factorial(i - 1);
         }
-        private int NChooseTwo(int o)
+        private long NChooseTwo(long o)
         {
             return Factorial(o) / (2 * Factorial(o - 2));
         }
